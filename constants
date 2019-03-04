@@ -1,0 +1,26 @@
+#!/usr/bin/perl
+# How to use constants in Perl
+# Best practices includes keeping constant's name to be in CAPITALS
+
+use 5.14.0;
+use warnings;
+
+#use constant PI => 3.141592653589793238462643383279;
+#use constant TRUE => 1;
+#use constant FALSE => '';
+
+#Above three lines or below 5 lines both works fine in declaring constants in Perl
+# OR 
+use constant {
+        PI => 3.141592653589793238462643383279,
+        TRUE => 1,
+        FALSE => ''
+    };   #Do not forget to add ';' at the closing of '}'
+
+say PI;
+
+if (TRUE) {
+    say 'true';
+} else {
+    say 'false';
+}
