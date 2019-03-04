@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+# given when statements in perl 
+
+use 5.14.2;
+use warnings;
+
+my $x = 1;
+say "Hello, World" if $x == 1;
+
+given ($x){
+	say "One" when $x == 1;
+	say "Two" when $x == 2;
+	say "Three" when $x == 3;
+	default {say "Oops"};
+}
+
+# OR
+given ($x){
+	when ($x == 1) { say "One Again"};
+	when ($x == 2) { say "Two Again"};
+	when ($x == 3) { say "Three Again"};
+	default { say "Oops Again"};
+}
