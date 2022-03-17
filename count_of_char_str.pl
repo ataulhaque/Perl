@@ -1,5 +1,5 @@
 #/usr/bin/perl
-# count of specific character in perl
+# count of specific character in a string
 my @company = qw(css corp limited);
 
 $company_name = join('-',@company);
